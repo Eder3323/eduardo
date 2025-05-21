@@ -65,7 +65,7 @@ const BabyAnnouncement = () => {
           className="mt-8"
         >
           <img
-            src="/assets/lion_leyend.png"
+            src="/assets/lion_leyend_2.png"
             alt="Leoncito bebé"
             className="w-56 md:w-36 mx-auto"
           />
