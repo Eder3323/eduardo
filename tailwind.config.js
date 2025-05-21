@@ -7,7 +7,9 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          sans: ['Poppins', 'sans-serif','Quicksand'],
+          sans: ['Poppins', 'sans-serif'],
+          poetsen: ['"Poetsen One"', 'cursive'],
+          quicksand: ['Quicksand', 'sans-serif'],
         },
       },
     },

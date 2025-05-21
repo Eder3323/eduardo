@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-6"
         >
-            <h1 className="font-quicksand text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
+            <h1 className="font-poetsen text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
                 ¡Celebremos la llegada de Eduardo Valentín!
             </h1>
 
