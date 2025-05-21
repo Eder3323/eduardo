@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   return (
@@ -38,6 +39,14 @@ const Hero = () => {
           Te esperamos con amor el 22 de junio de 2025 a las 4:00 PM en casa de los abuelitos Tomás y Minerva 🧸✨
         </motion.p>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+        >
+          <CountdownTimer />
+        </motion.div>
+
         {/* Indicador de scroll */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -45,7 +54,6 @@ const Hero = () => {
           transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-
         </motion.div>
       </div>
     </div>
