@@ -10,6 +10,7 @@ module.exports = {
           sans: ['Poppins', 'sans-serif'],
           poetsen: ['"Poetsen One"', 'cursive'],
           quicksand: ['Quicksand', 'sans-serif'],
+          baloo: ['"Baloo 2"', 'cursive'],
         },
       },
     },

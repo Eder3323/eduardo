@@ -27,8 +27,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-6"
         >
-            <h1 className="font-poetsen text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
-                ¡Celebremos la llegada de Eduardo Valentín!
+            <h1 className="font-baloo text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
+                ¡Prepárate para conocer a Eduardo Valentín!
             </h1>
 
         </motion.h1>
@@ -39,7 +39,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto"
         >
-          Te esperamos con amor el 22 de junio de 2025 a las 4:00 PM en casa de los abuelitos Tomás y Minerva 🧸✨
+            Con todo nuestro cariño, te esperamos el
+            22 de junio de 2025 a las 4:00 PM
+            en casa de los abuelitos Tomás y Minerva 🧸✨
         </motion.p>
 
         <motion.div
