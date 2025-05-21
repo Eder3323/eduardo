@@ -13,6 +13,8 @@ function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 }
 
 function describeArc(x, y, radius, startAngle, endAngle) {
+  // Si el ángulo es 0, no dibujar nada
+  if (endAngle === 0) return '';
   const start = polarToCartesian(x, y, radius, endAngle);
   const end = polarToCartesian(x, y, radius, startAngle);
   const largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
@@ -23,20 +25,30 @@ function describeArc(x, y, radius, startAngle, endAngle) {
   return d;
 }
 
+// Mapea el valor de manera inversa: valor máximo = arco completo (360), 0 = arco vacío
 function mapNumber(number, in_min, in_max, out_min, out_max) {
-  return ((number - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+  // Invertir el mapeo para que el arco se reduzca conforme avanza el tiempo
+  return ((in_max - number) * (out_max - out_min)) / (in_max - in_min) + out_min;
 }
 
-const SVGCircle = ({ radius }) => (
-  <svg className="countdown-svg">
-    <path
-      fill="none"
-      stroke="#000000"
-      strokeWidth="4"
-      d={describeArc(50, 50, 48, 0, radius)}
-    />
-  </svg>
-);
+const SVGCircle = ({ value, maxValue }) => {
+  // El radio debe dejar espacio para el stroke
+  const radius = 46;
+  const startAngle = 0;
+  // Invertir el mapeo para que el arco se vacíe conforme el valor disminuye
+  const endAngle = mapNumber(value, maxValue, 0, 0, 360);
+  return (
+    <svg className="countdown-svg" width="100" height="100" viewBox="0 0 100 100" style={{ overflow: 'visible' }}>
+      <path
+        fill="none"
+        stroke="#f97316"
+        strokeWidth="4"
+        strokeLinecap="round"
+        d={describeArc(50, 50, radius, startAngle, endAngle)}
+      />
+    </svg>
+  );
+};
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -79,12 +91,9 @@ const CountdownTimer = () => {
 
   const TimeBlock = ({ value, label, maxValue }) => {
     if (!value && value !== 0) return null;
-    
-    const radius = mapNumber(value, 0, maxValue, 0, 360);
-    
     return (
       <div className="countdown-item">
-        <SVGCircle radius={radius} />
+        <SVGCircle value={value} maxValue={maxValue} />
         <div className="countdown-value">{value.toString().padStart(2, '0')}</div>
         <span className="countdown-label">{label}</span>
       </div>
@@ -111,10 +120,10 @@ const CountdownTimer = () => {
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className="countdown-wrapper flex-nowrap overflow-x-auto"
     >
-      <TimeBlock value={timeLeft.days} label="DÍAS" maxValue={365} />
+      <TimeBlock value={timeLeft.days} label="DÍAS" maxValue={33} />
       <TimeBlock value={timeLeft.hours} label="HORAS" maxValue={24} />
       <TimeBlock value={timeLeft.minutes} label="MINUTOS" maxValue={60} />
-      <TimeBlock value={timeLeft.seconds} label="SEGUNDOS" maxValue={60} />
+      <TimeBlock value={timeLeft.seconds} label="SEGUN2" maxValue={60} />
     </motion.div>
   );
 };
