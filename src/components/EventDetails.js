@@ -38,7 +38,7 @@ const EventDetails = () => {
             variants={itemVariants}
             className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="absolute -top-4 -right-4 text-6xl opacity-20">📅</div>
+            <div className="absolute -top-1 -right-4 text-6xl opacity-20">📅</div>
             <h3 className="text-center text-xl font-semibold text-orange-800 mb-2">Fecha</h3>
             <p className="text-center text-gray-700">22 de junio de 2025</p>
             <motion.div
@@ -51,7 +51,7 @@ const EventDetails = () => {
               <img
                 src="/assets/baby/lion_5.png"
                 alt="Leoncito decorativo"
-                className="w-52 md:w-56 mx-auto mt-4 opacity-90"
+                className="w-64 md:w-56 mx-auto mt-4 opacity-90"
                 style={{ backdropFilter: 'blur(2px)' }}
               />
             </motion.div>
@@ -62,7 +62,7 @@ const EventDetails = () => {
             variants={itemVariants}
             className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="absolute -top-4 -right-4 text-6xl opacity-20">⏰</div>
+            <div className="absolute -top-1 -right-4 text-6xl opacity-20">⏰</div>
             <h3 className="text-center text-xl font-semibold text-orange-800 mb-2">Hora</h3>
             <p className="text-center text-gray-700">4:00 PM</p>
             <motion.div
@@ -73,7 +73,7 @@ const EventDetails = () => {
                 className="w-full flex justify-center"
             >
               <img
-                  src="/assets/baby/lion_3.png"
+                  src="/assets/baby/time.png"
                   alt="Leoncito decorativo"
                   className="w-52 md:w-56 mx-auto mt-4 opacity-90"
                   style={{ backdropFilter: 'blur(2px)' }}

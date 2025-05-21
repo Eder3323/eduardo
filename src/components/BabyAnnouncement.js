@@ -53,13 +53,6 @@ const BabyAnnouncement = () => {
           Pronto llegará...
         </motion.p>
 
-        <motion.h2
-          variants={itemVariants}
-          className="text-4xl md:text-5xl font-bold text-green-700 mt-1"
-        >
-          Eduardo Valentín
-        </motion.h2>
-
         <motion.div
           variants={imageVariants}
           className="mt-8"
@@ -71,6 +64,12 @@ const BabyAnnouncement = () => {
           />
         </motion.div>
 
+        <motion.h2
+            variants={itemVariants}
+            className="text-4xl md:text-5xl font-bold text-green-700 mt-2"
+        >
+          Eduardo Valentín
+        </motion.h2>
         {/* Elementos decorativos */}
         <div className="hidden md:block">
           <motion.div
