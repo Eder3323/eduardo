@@ -86,7 +86,7 @@ const EventDetails = () => {
             variants={itemVariants}
             className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300 md:col-span-3"
           >
-            <div className="absolute -top-4 -right-4 text-6xl opacity-20">🏠</div>
+            <div className="absolute -top-1 -right-4 text-6xl opacity-20">🏠</div>
             <h3 className="text-center text-xl font-semibold text-orange-800 mb-2">Lugar</h3>
             <p className="text-center text-gray-700 mb-3">
               Casa de los abuelitos Tomás y Minerva
