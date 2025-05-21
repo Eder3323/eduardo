@@ -5,6 +5,8 @@ import EventDetails from './components/EventDetails';
 import BackgroundMusic from './components/BackgroundMusic';
 import ConfirmationForm from './components/ConfirmationForm';
 import BabyAnnouncement from './components/BabyAnnouncement';
+import QuoteFrame from './components/QuoteFrame';
+
 
 function App() {
     return (
@@ -12,6 +14,7 @@ function App() {
             <main className="relative w-full">
                 <Hero />
                 <EventDetails />
+                <QuoteFrame />
                 <BabyAnnouncement />
                 <ConfirmationForm />
             </main>
