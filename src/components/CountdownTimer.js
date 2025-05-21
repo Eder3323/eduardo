@@ -105,12 +105,17 @@ const CountdownTimer = () => {
   }
 
   return (
-    <div className="countdown-wrapper">
-      <TimeBlock value={timeLeft.days} label="Días" maxValue={365} />
-      <TimeBlock value={timeLeft.hours} label="Horas" maxValue={24} />
-      <TimeBlock value={timeLeft.minutes} label="Minutos" maxValue={60} />
-      <TimeBlock value={timeLeft.seconds} label="Segundos" maxValue={60} />
-    </div>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      className="countdown-wrapper flex-nowrap overflow-x-auto"
+    >
+      <TimeBlock value={timeLeft.days} label="DÍAS" maxValue={365} />
+      <TimeBlock value={timeLeft.hours} label="HORAS" maxValue={24} />
+      <TimeBlock value={timeLeft.minutes} label="MINUTOS" maxValue={60} />
+      <TimeBlock value={timeLeft.seconds} label="SEGUNDOS" maxValue={60} />
+    </motion.div>
   );
 };
 
