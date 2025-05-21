@@ -24,7 +24,7 @@ const EventDetails = () => {
   };
 
   return (
-    <section className="min-h-screen py-16 px-4 bg-gradient-to-b from-pink-50 to-orange-50 relative">
+    <section className="min-h-screen py-12 px-4 bg-gradient-to-b from-pink-50 to-orange-50 relative">
       <div className="max-w-6xl mx-auto relative">
         <motion.div
           variants={containerVariants}
