@@ -48,9 +48,9 @@ const BabyAnnouncement = () => {
       >
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl font-medium text-gray-600"
+          className="text-2xl md:text-xl font-medium text-gray-600"
         >
-          Pronto llegará...
+          Pronto llegaré 👼 !
         </motion.p>
 
         <motion.div
