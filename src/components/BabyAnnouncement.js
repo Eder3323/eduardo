@@ -38,7 +38,7 @@ const BabyAnnouncement = () => {
   };
 
   return (
-    <section className="py-10 pb-1 px-4 bg-gradient-to-b from-pink-50 to-orange-50">
+    <section className="py-10 px-4 bg-gradient-to-b from-pink-50 to-orange-50 pb-12">
       <motion.div
         variants={containerVariants}
         initial="hidden"

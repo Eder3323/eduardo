@@ -6,6 +6,7 @@ import BackgroundMusic from './components/BackgroundMusic';
 import ConfirmationForm from './components/ConfirmationForm';
 import BabyAnnouncement from './components/BabyAnnouncement';
 import QuoteFrame from './components/QuoteFrame';
+import Credits from './components/Credits';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <QuoteFrame />
                 <BabyAnnouncement />
                 <ConfirmationForm />
+                <Credits />
             </main>
             <BackgroundMusic />
         </div>

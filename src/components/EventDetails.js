@@ -36,35 +36,35 @@ const EventDetails = () => {
           {/* Fecha */}
           <motion.div
             variants={itemVariants}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            className="card-decorated bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="absolute -top-4 -right-4 text-6xl opacity-20">🗓️</div>
-            <h3 className="text-center text-xl font-semibold text-orange-800 mb-2">Fecha</h3>
-            <p className="text-center text-gray-700">22 de junio de 2025</p>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-              className="w-full flex justify-center"
-            >
-              <img
-                src="/assets/baby/lion_5.png"
-                alt="Leoncito decorativo"
-                className="w-64 md:w-56 mx-auto mt-4 opacity-90"
-                style={{ backdropFilter: 'blur(2px)' }}
+            <div className="absolute -top -right-2 text-6xl opacity-60">🗓️</div>
+            <h3 className="text-center text-2xl font-semibold text-orange-800 mb-2 mt-5">Fecha</h3>
+            <p className="text-center text-gray-700 text-xl">22 de junio de 2025</p>
+            <div className="relative w-full flex justify-center mt-4">
+
+              {/* Leoncito centrado */}
+              <motion.img
+                  src="/assets/baby/lion_5.png"
+                  alt="Leoncito decorativo"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: '-100px' }}
+                  transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+                  className="relative z-10 w-64 md:w-56 opacity-90 mb-10"
+                  style={{ backdropFilter: 'blur(2px)' }}
               />
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Hora */}
           <motion.div
             variants={itemVariants}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            className="card-decorated_4 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
-            <div className="absolute -top-4 -right-4 text-6xl opacity-20">⏰</div>
-            <h3 className="text-center text-xl font-semibold text-orange-800 mb-2">Hora</h3>
-            <p className="text-center text-gray-700">4:00 PM</p>
+            <div className="absolute -top -right-2 text-6xl opacity-40">⏰</div>
+            <h3 className="text-center text-2xl font-semibold text-orange-800 mb-2">Hora</h3>
+            <p className="text-center text-gray-700 text-xl">4:00 PM</p>
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -75,7 +75,7 @@ const EventDetails = () => {
               <img
                   src="/assets/baby/time.png"
                   alt="Leoncito decorativo"
-                  className="w-52 md:w-56 mx-auto mt-4 opacity-90"
+                  className="w-52 md:w-56 mx-auto mt-2 opacity-90 mb-6"
                   style={{ backdropFilter: 'blur(2px)' }}
               />
             </motion.div>
@@ -84,16 +84,16 @@ const EventDetails = () => {
           {/* Lugar */}
           <motion.div
             variants={itemVariants}
-            className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300 md:col-span-3"
+            className="card-decorated_5 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden hover:shadow-xl transition-shadow duration-300 md:col-span-3"
           >
-            <div className="absolute -top-4 -right-4 text-6xl opacity-20">🏠</div>
-            <h3 className="text-center text-xl font-semibold text-orange-800 mb-2">Lugar</h3>
-            <p className="text-center text-gray-700 mb-3">
+            <div className="absolute -top -right-4 text-6xl opacity-60">🏠</div>
+            <h3 className="text-center text-2xl font-semibold text-orange-800 mb-2 pt-10">&nbsp;&nbsp;&nbsp;Lugar</h3>
+            <p className="text-center text-gray-700 mb-1 text-xl">
               Casa de los abuelitos Tomás y Minerva
               <br />
-              <span className="text-sm text-gray-600">
-                C. Durango, Col. Emiliano Zapata, Jaltepec
-              </span>
+              {/*<span className="text-sm text-gray-600">*/}
+              {/*  C. Durango, Col. Emiliano Zapata, Jaltepec*/}
+              {/*</span>*/}
             </p>
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -105,7 +105,7 @@ const EventDetails = () => {
               <img
                   src="/assets/baby/lion_6.png"
                   alt="Leoncito decorativo"
-                  className="w-52 md:w-56 mx-auto mt-4 opacity-90 mb-2"
+                  className="w-52 md:w-56 mx-auto mt-2 opacity-90 mb-2"
                   style={{ backdropFilter: 'blur(2px)' }}
               />
             </motion.div>
@@ -141,15 +141,7 @@ const EventDetails = () => {
           >
             🎈
           </motion.div>
-          {/*<motion.div*/}
-          {/*  initial={{ opacity: 0, scale: 0.8 }}*/}
-          {/*  whileInView={{ opacity: 1, scale: 1 }}*/}
-          {/*  viewport={{ once: true }}*/}
-          {/*  transition={{ duration: 0.5, delay: 0.4 }}*/}
-          {/*  className="fixed left-1/4 bottom-1/4 text-4xl"*/}
-          {/*>*/}
-          {/*  👣*/}
-          {/*</motion.div>*/}
+
         </div>
       </div>
     </section>

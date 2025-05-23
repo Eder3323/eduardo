@@ -4,7 +4,9 @@ import CountdownTimer from './CountdownTimer';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-yellow-100 via-orange-100 to-pink-100">
+    // <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-yellow-100 via-orange-100 to-pink-100">
+      <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-green-50 via-green-100 to-green-200">
+
       {/* Imagen de fondo con animación */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -20,15 +22,20 @@ const Hero = () => {
       </motion.div>
 
       {/* Contenido principal */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 down_div">
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 down_div pt-8">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-6"
         >
-            <h1 className="font-baloo text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
+            {/*<h1 className="font-baloo text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">*/}
+            {/*    ¡Prepárate para conocer a Eduardo Valentín! Mis papis Mariela y Eduardo te invitan a mi baby shower*/}
+            {/*</h1>*/}
+            <h1 className="font-poetsen text-3xl md:text-4xl text-center bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
                 ¡Prepárate para conocer a Eduardo Valentín!
+                <br />
+                Mis papis Mariela y Eduardo te invitan a mi baby shower
             </h1>
 
         </motion.h1>

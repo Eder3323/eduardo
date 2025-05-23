@@ -55,8 +55,8 @@ const ConfirmationForm = () => {
   };
 
   return (
-    <section id="formulario-confirmacion" className="py-16 px-4 bg-gradient-to-b from-orange-50 to-pink-50">
-      <div className="max-w-md mx-auto">
+    <section id="formulario-confirmacion" className="card-decorated_6 py-16 px-4 bg-gradient-to-b from-orange-50 to-pink-50 pb-8">
+      <div className=" max-w-md mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
