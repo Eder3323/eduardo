@@ -8,7 +8,7 @@ const QuoteFrame = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 1, ease: 'easeOut' }}
-            className="text-center text-xl md:text-xl font-semibold italic text-rose-700 leading-relaxed px-6 md:px-12 my-8 md:my-12 pb-8 pt-5"
+            className="text-center text-2xl md:text-2xl font-semibold italic text-rose-700 leading-relaxed px-6 md:px-12 my-8 md:my-12 pb-8 pt-5"
         >
             "Hay corazones que se forman dentro de otros, y cuando nacen, no lo hacen solos: traen consigo un amor que no conoce final. Bienvenido, Eduardo Valentín ❤️!"
             <img
